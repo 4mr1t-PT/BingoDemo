@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Comic+Sans+MS 18);
+body {
+  background: #c0f0f9;
+
+  padding: 0;
+  margin: 0;
+
+}
+.bingo_text {
+	z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    left: 45.3%;
+    top: 82px;
+
+}
+.redball {
+	height:100%;
+	width:100%;
+	position:relative;
+
+}
+.yellowball {
+	height:100%;
+	width:100%;
+	position:relative;
+
+}
+.greenball {
+	height:100%;
+	width:100%;
+	position:relative;
+
+
+}
+.ball {
+	position:relative;
+	display:inline-block;
+}
+#ballimg {
+	display:block;
+	padding: 0;
+	margin-left: auto;
+	margin-right: 27.5%;
+	margin-top: 2px;
+	text-align: center;
+	float:left;
+	height: 100%;
+	width: 100%;
+	/*vertical-align: middle;*/
+}
+
+.username {
+	position: absolute;
+	top: 2%;
+	left:2%;
+	color:black;
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 150%;
+	line-height:150%;
+	font-weight: 600;
+}
+.red_text {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate( -50%, -50% );
+    text-align: center;
+    color: black;
+    font-family: 'Kosugi Maru', sans-serif;
+	font-size: 20pt;
+	/*font-weight: 600;*/
+}
+.winner {
+	color: black;
+    font-family: 'Kosugi Maru', sans-serif;
+	font-size: 40pt;
+	display:none;
+}
+
+.newgame {
+	color: black;
+    font-family: 'Kosugi Maru', sans-serif;
+	font-size: 40pt;
+	display:none;
+	padding-top: 30px;
+}
+
+.blueball {
+	height:25%;
+	width:100%;
+	position:relative;
+
+}
+.tealball {
+	height:100%;
+	width:100%;
+	position:relative;
+
+}
+h1{
+  font-family: 'Roboto', sans-serif; font-size: 20pt;
+  font-weight: 600;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+}
+
+p {
+  font-family: 'Roboto', sans-serif; font-size: 20pt;
+  font-weight: 400;
+}
+
+
+
+.imagesMain {
+	
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.ball {
+	margin-left:3%; 
+	margin-right: auto;
+	width: 10%;
+	height: 23%;
+	float:left;
+	/*overflow:hidden;*/
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+
+#square12 {
+  font-family: 'Kosugi Maru', sans-serif;
+  margin: 0 auto;
+  background: #0C55E8;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+#square37 {
+  font-family:'Kosugi Maru', sans-serif;
+  margin: 0 auto;
+  background: #0C55E8;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15pt;
+}
+#table1 {
+	float:bottom;
+}
+.table {
+
+  margin-left: 7%; 
+  margin-right: auto;
+  text-align: center;
+  width: 25%;
+  height: 50%;
+  border-collapse: collapse;
+  background: white;
+  float:left;
+  overflow:hidden;
+
+}
+.table2 {
+  margin-right: 7%; 
+  margin-left: auto;
+  text-align: center;
+  width: 25%;
+  height: 80%;
+  border-collapse: collapse;
+  background: white;
+  float:right;
+  overflow:hidden;	
+
+}
+
+.bingobutton {
+	margin-left:15%;
+	margin-right:6%;
+	margin-top:0.2%;
+	position: relative;
+	width: 10%;
+	height:50px;
+	
+}
+
+
+
+td a {
+	display:block;
+	width:100%;
+	font-weight: 600;
+	font-size: 15pt;
+}
+th, td {
+  font-family:'Kosugi Maru', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #ddd;
+  width: 20%;
+  background: '#FFFFFF';
+}
+
+.orange {
+  background: #ef921f;
+  font-size: 15pt;
+
+}

@@ -1,0 +1,298 @@
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+<meta charset="utf-8" />
+<script type="text/javascript" src="Diffusion/Diffusion6.1.1_01/clients/js/diffusion.js"/></script>
+
+<title>Bingo</title>
+
+<link rel="stylesheet" type="text/css" href="bingocss.css" />
+
+<script type="text/javascript" src="bingojs.js"></script>
+<script type="text/javascript" src="Diffusion/Diffusion6.1.1_01/clients/js/diffusion.js"/></script>
+
+</head>
+
+<body onload="newCard()">
+
+	
+    <div id="header">
+      <img align = "center" src="bingotitle1.png" alt = "title" class="center">
+	  
+		<p id="username" class="username" >Username:</p>
+	  
+	</div>
+	<div id = "table3"> 
+		<table align="right" id="callednumbersTable" class="table2">
+			<tr>
+				<th class="orange">B</th>
+				<th class="orange">I</th>
+				<th class="orange">N</th>
+				<th class="orange">G</th>
+				<th class="orange">O</th>
+			</tr>
+			<tr>
+				<td id="B1"> 1</td>
+				<td id="I16"> 16</td>
+				<td id="N31"> 31</td>
+				<td id="G46"> 46</td>
+				<td id="O61"> 61</td>				
+			</tr>
+			<tr>
+				<td id="B2"> 2</td>
+				<td id="I17"> 17</td>
+				<td id="N32"> 32</td>
+				<td id="G47"> 47</td>
+				<td id="O62"> 62</td>
+			</tr>
+			<tr>
+				<td id="B3"> 3</td>
+				<td id="I18"> 18</td>
+				<td id="N33"> 33</td>
+				<td id="G48"> 48</td>
+				<td id="O63"> 63</td>
+			</tr>
+			<tr>
+				<td id="B4"> 4</td>
+				<td id="I19"> 19</td>
+				<td id="N34"> 34</td>
+				<td id="G49"> 49</td>
+				<td id="O64"> 64</td>
+			</tr>
+			<tr>
+				<td id="B5"> 5</td>
+				<td id="I20"> 20</td>
+				<td id="N35"> 35</td>
+				<td id="G50"> 50</td>
+				<td id="O65"> 65</td>
+			</tr>
+			<tr>
+				<td id="B6"> 6</td>
+				<td id="I21"> 21</td>
+				<td id="N36"> 36</td>
+				<td id="G51"> 51</td>
+				<td id="O66"> 66</td>
+			</tr>
+			<tr>
+				<td id="B7"> 7</td>
+				<td id="I22"> 22</td>
+				<td id="N37"> 37</td>
+				<td id="G52"> 52</td>
+				<td id="O67"> 67</td>
+			</tr>
+			<tr>
+				<td id="B8"> 8</td>
+				<td id="I23"> 23</td>
+				<td id="N38"> 38</td>
+				<td id="G53"> 53</td>
+				<td id="O68"> 68</td>
+			</tr>
+			<tr>
+				<td id="B9"> 9</td>
+				<td id="I24"> 24</td>
+				<td id="N39"> 39</td>
+				<td id="G54"> 54</td>
+				<td id="O69"> 69</td>
+			</tr>
+			<tr>
+				<td id="B10"> 10</td>
+				<td id="I25"> 25</td>
+				<td id="N40"> 40</td>
+				<td id="G55"> 55</td>
+				<td id="O70"> 70</td>
+			</tr>
+			<tr>
+				<td id="B11"> 11</td>
+				<td id="I26"> 26</td>
+				<td id="N41"> 41</td>
+				<td id="G56"> 56</td>
+				<td id="O71"> 71</td>
+			</tr>
+			<tr>
+				<td id="B12"> 12</td>
+				<td id="I27"> 27</td>
+				<td id="N42"> 42</td>
+				<td id="G57"> 57</td>
+				<td id="O72"> 72</td>
+			</tr>
+			<tr>
+				<td id="B13"> 13</td>
+				<td id="I28"> 28</td>
+				<td id="N43"> 43</td>
+				<td id="G58"> 58</td>
+				<td id="O73"> 73</td>
+			</tr>
+			<tr>
+				<td id="B14"> 14</td>
+				<td id="I29"> 29</td>
+				<td id="N44"> 44</td>
+				<td id="G59"> 59</td>
+				<td id="O74"> 74</td>
+			</tr>
+			<tr>
+				<td id="B15"> 15</td>
+				<td id="I30"> 30</td>
+				<td id="N45"> 45</td>
+				<td id="G60"> 60</td>
+				<td id="O75"> 75</td>
+			</tr>
+			
+		</table>
+		</div>
+
+	<div id="content">
+		<div id="imagesMain" align="left" style="width:100%">
+			<div class="ball">
+				<img id="ballimg" src="redball.png" alt="redball" >
+				<div class="red_text"
+					<span id="rednumber" class = "bingo_text"></span>
+				</div>
+			</div>
+			<div class="ball" >
+				<img id="ballimg" src="blueball.png" alt="blueball">
+				<div class="red_text"
+					<span id="bluenumber" class = "bingo_text"></span>
+				</div>
+			</div>
+			<div class="ball">
+				<img id="ballimg" src="greenball.png" alt="greenball">	
+				<div class="red_text"
+					<span id="greennumber" class = "bingo_text"></span>
+				</div>
+			</div>
+			<div class="ball">	
+				<img id="ballimg" src="yellowball.png" alt="yellowball">
+				<div class="red_text"
+					<span id="yellownumber" class = "bingo_text"></span>
+				</div>
+			</div>
+			<div class="ball">
+				<img id="ballimg" src="tealball.png" alt="tealball">
+				<div class="red_text"
+					<span id="tealnumber" class = "bingo_text"></span>
+				</div>
+			</div>
+		</div>
+			
+			
+		
+
+	<div id = "bothtables" class = "bothtables">	
+		<div id="table1" style = "width:100%;" >		
+			<table align="left" id="bingotable" class="table">
+				<tr>
+					<th class="orange">B</th>
+					<th class="orange">I</th>
+					<th class="orange">N</th>
+					<th class="orange">G</th>
+					<th class="orange">O</th>
+				</tr>
+				<tr>
+					<td id="squarecell0"><a href = "#" id="square0" onclick = "clicked(square0,squarecell0)"> &nbsp;</a></td>
+					<td id="squarecell1"><a href = "#" id="square1" onclick = "clicked(square1, squarecell1)"> &nbsp;</a></td>
+					<td id="squarecell2"><a href = "#" id="square2" onclick = "clicked(square2, squarecell2)"> &nbsp;</a></td>
+					<td id="squarecell3"><a href = "#" id="square3" onclick = "clicked(square3, squarecell3)"> &nbsp;</a></td>
+					<td id="squarecell4"><a href = "#" id="square4" onclick = "clicked(square4, squarecell4)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell5"><a href = "#" id="square5" onclick = "clicked(square5, squarecell5 )"> &nbsp;</a></td>
+					<td id="squarecell6"><a href = "#" id="square6" onclick = "clicked(square6, squarecell6)"> &nbsp;</a></td>
+					<td id="squarecell7"><a href = "#" id="square7" onclick = "clicked(square7, squarecell7)"> &nbsp;</a></td>
+					<td id="squarecell8"><a href = "#" id="square8" onclick = "clicked(square8, squarecell8)"> &nbsp;</a></td>
+					<td id="squarecell9"><a href = "#" id="square9" onclick = "clicked(square9, squarecell9)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell10"><a href = "#" id="square10" onclick = "clicked(square10,squarecell10)"> &nbsp;</a></td>
+					<td id="squarecell11"><a href = "#" id="square11" onclick = "clicked(square11,squarecell11)"> &nbsp;</a></td>
+					<td id="square12">X</td>
+					<td id="squarecell13"><a href = "#" id="square13" onclick = "clicked(square13,squarecell13)"> &nbsp;</a></td>
+					<td id="squarecell14"><a href = "#" id="square14" onclick = "clicked(square14,squarecell14)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell15"><a href = "#" id="square15" onclick = "clicked(square15 ,squarecell15)"> &nbsp;</a></td>
+					<td id="squarecell16"><a href = "#" id="square16" onclick = "clicked(square16 ,squarecell16)"> &nbsp;</a></td>
+					<td id="squarecell17"><a href = "#" id="square17" onclick = "clicked(square17 ,squarecell17)"> &nbsp;</a></td>
+					<td id="squarecell18"><a href = "#" id="square18" onclick = "clicked(square18 ,squarecell18)"> &nbsp;</a></td>
+					<td id="squarecell19"><a href = "#" id="square19" onclick = "clicked(square19 ,squarecell19)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell20"><a href = "#" id="square20" onclick = "clicked(square20 ,squarecell20)"> &nbsp;</a></td>
+					<td id="squarecell21"><a href = "#" id="square21" onclick = "clicked(square21 ,squarecell21)"> &nbsp;</a></td>
+					<td id="squarecell22"><a href = "#" id="square22" onclick = "clicked(square22 ,squarecell22)"> &nbsp;</a></td>
+					<td id="squarecell23"><a href = "#" id="square23" onclick = "clicked(square23 ,squarecell23)"> &nbsp;</a></td>
+					<td id="squarecell24"><a href = "#" id="square24" onclick = "clicked(square24 ,squarecell24)"> &nbsp;</a></td>
+				</tr>
+				
+			</table>
+					
+			
+		</div>	
+		<div id="table2" style= "width:100%;"> 
+			<table align="left" id="bingotable2" class="table">
+				<tr>
+					<th class="orange">B</th>
+					<th class="orange">I</th>
+					<th class="orange">N</th>
+					<th class="orange">G</th>
+					<th class="orange">O</th>
+				</tr>
+				<tr>
+					<td id="squarecell25"><a href = "#" id="square25" onclick = "clicked(square25, squarecell25)"> &nbsp;</a></td>
+					<td id="squarecell26"><a href = "#" id="square26" onclick = "clicked(square26, squarecell26)"> &nbsp;</a></td>
+					<td id="squarecell27"><a href = "#" id="square27" onclick = "clicked(square27, squarecell27)"> &nbsp;</a></td>
+					<td id="squarecell28"><a href = "#" id="square28" onclick = "clicked(square28, squarecell28)"> &nbsp;</a></td>
+					<td id="squarecell29"><a href = "#" id="square29" onclick = "clicked(square29, squarecell29)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell30"><a href = "#" id="square30" onclick = "clicked(square30, squarecell30)"> &nbsp;</a></td>
+					<td id="squarecell31"><a href = "#" id="square31" onclick = "clicked(square31, squarecell31)"> &nbsp;</a></td>
+					<td id="squarecell32"><a href = "#" id="square32" onclick = "clicked(square32, squarecell32)"> &nbsp;</a></td>
+					<td id="squarecell33"><a href = "#" id="square33" onclick = "clicked(square33, squarecell33)"> &nbsp;</a></td>
+					<td id="squarecell34"><a href = "#" id="square34" onclick = "clicked(square34, squarecell34)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell35"><a href = "#" id="square35" onclick = "clicked(square35, squarecell35)"> &nbsp;</a></td>
+					<td id="squarecell36"><a href = "#" id="square36" onclick = "clicked(square36, squarecell36)"> &nbsp;</a></td>
+					<td id="square37">X</td>
+					<td id="squarecell38"><a href = "#" id="square38" onclick = "clicked(square38, squarecell38)"> &nbsp;</a></td>
+					<td id="squarecell39"><a href = "#" id="square39" onclick = "clicked(square39, squarecell39)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell40"><a href = "#" id="square40" onclick = "clicked(square40, squarecell40)"> &nbsp;</a></td>
+					<td id="squarecell41"><a href = "#" id="square41" onclick = "clicked(square41, squarecell41)"> &nbsp;</a></td>
+					<td id="squarecell42"><a href = "#" id="square42" onclick = "clicked(square42, squarecell42)"> &nbsp;</a></td>
+					<td id="squarecell43"><a href = "#" id="square43" onclick = "clicked(square43, squarecell43)"> &nbsp;</a></td>
+					<td id="squarecell44"><a href = "#" id="square44" onclick = "clicked(square44, squarecell44)"> &nbsp;</a></td>
+				</tr>
+				<tr>
+					<td id="squarecell45"><a href = "#" id="square45" onclick = "clicked(square45, squarecell45)"> &nbsp;</a></td>
+					<td id="squarecell46"><a href = "#" id="square46" onclick = "clicked(square46, squarecell46)"> &nbsp;</a></td>
+					<td id="squarecell47"><a href = "#" id="square47" onclick = "clicked(square47, squarecell47)"> &nbsp;</a></td>
+					<td id="squarecell48"><a href = "#" id="square48" onclick = "clicked(square48, squarecell48)"> &nbsp;</a></td>
+					<td id="squarecell49"><a href = "#" id="square49" onclick = "clicked(square49, squarecell49)"> &nbsp;</a></td>
+				</tr>
+			</table>
+			
+				<!--<p align="center"><a href="#" onclick="win()" class="bingo-1">BINGO</a><p>-->
+			
+		</div>	
+				<p id="Winner" class = "winner">The winner is: </p>
+				<p id="NewGame" class = "newgame"> New Game Starting... </p>
+				<p><a href="#" onclick="win()"><img align = "center" src="bingobutton.png" id = "bingobutton1" class="bingobutton"></a>
+				<a href="#" onclick="winTable2()"><img align = "center" src="bingobutton.png" id = "bingobutton2" class="bingobutton"></a></p>
+				
+				<!--<p align= "center"><a href="#" onclick="win()" class="bingo-1">BINGO</a><p>-->
+				
+	</div>
+		
+		
+		
+	</div>
+	
+
+</body>
+
+</html>
