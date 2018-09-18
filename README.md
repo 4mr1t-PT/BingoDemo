@@ -9,6 +9,6 @@ RUNNING:
 Change src in Bingo.html to point to diffusion.js 
 e.g.  src="Diffusion/Diffusion6.1.1_01/clients/js/diffusion.js
 
-Run back end Main to start generating bingo numbers
+Run back end Main while Diffusion is running, to start generating bingo numbers 
 
 Open Bingo.html 
